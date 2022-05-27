@@ -1,0 +1,182 @@
+/* line 4, ../../Aplicando Sass/scss/_colores.scss */
+#encabezado h1 {
+  text-align: center;
+  font-size: 56px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: blanchedalmond;
+  background: rgba(165, 42, 42, 0.774);
+  width: 40%;
+  margin: auto;
+}
+
+/* line 18, ../../Aplicando Sass/scss/_colores.scss */
+#navegacion ul li a {
+  display: block;
+  color: blanchedalmond;
+  background-color: brown;
+  padding: 10px;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+/* line 33, ../../Aplicando Sass/scss/_colores.scss */
+#navegacion ul li a:hover {
+  color: #fcfce2;
+  background-color: #ff2929;
+}
+
+/* line 40, ../../Aplicando Sass/scss/_colores.scss */
+.subtitulo {
+  display: block;
+  text-align: center;
+  color: blanchedalmond;
+  background-color: #ca412f;
+  padding: 8px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+}
+
+/* line 53, ../../Aplicando Sass/scss/_colores.scss */
+#piePagina ul li a {
+  text-decoration: none;
+  color: blanchedalmond;
+  padding: 5px;
+}
+
+/* line 64, ../../Aplicando Sass/scss/_colores.scss */
+#piePagina ul li a:hover {
+  color: beige;
+  background-color: rgba(165, 42, 42, 0.685);
+}
+
+/* line 71, ../../Aplicando Sass/scss/_colores.scss */
+.texto {
+  font-size: 15px;
+  color: blanchedalmond;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 20px;
+}
+
+/* line 1, ../../Aplicando Sass/scss/_base.scss */
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/* line 1, ../../Aplicando Sass/scss/_estructura.scss */
+#contenedor {
+  display: grid;
+  grid-template-areas: "Encabezado" "Navegacion" "Principal" "Pie";
+  background-color: rgba(70, 3, 3, 0.555);
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto minmax(200px, auto) 65px;
+}
+
+/* line 17, ../../Aplicando Sass/scss/_estructura.scss */
+header {
+  grid-area: Encabezado;
+}
+
+/* line 21, ../../Aplicando Sass/scss/_estructura.scss */
+nav {
+  grid-area: Navegacion;
+}
+
+/* line 25, ../../Aplicando Sass/scss/_estructura.scss */
+main {
+  grid-area: Principal;
+}
+
+/* line 29, ../../Aplicando Sass/scss/_estructura.scss */
+footer {
+  grid-area: Pie;
+}
+
+/* line 35, ../../Aplicando Sass/scss/_estructura.scss */
+#encabezado {
+  display: flex;
+  background-image: url(http://assets.stickpng.com/images/580b57fcd9996e24bc43c1e1.png);
+  background-size: contain;
+}
+
+/* line 42, ../../Aplicando Sass/scss/_estructura.scss */
+#encabezado img {
+  margin: 15px;
+}
+
+/* line 50, ../../Aplicando Sass/scss/_estructura.scss */
+#navegacion ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 60, ../../Aplicando Sass/scss/_estructura.scss */
+#navegacion ul li {
+  flex-grow: 1;
+}
+
+/* line 71, ../../Aplicando Sass/scss/_estructura.scss */
+.galeriaImagenes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* line 76, ../../Aplicando Sass/scss/_estructura.scss */
+.galeriaImagenes img {
+  padding: 20px;
+  height: auto;
+  width: 100%;
+}
+
+/* line 84, ../../Aplicando Sass/scss/_estructura.scss */
+#piePagina {
+  display: flex;
+  margin: 8px;
+}
+
+/* line 88, ../../Aplicando Sass/scss/_estructura.scss */
+#piePagina ul {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+}
+
+/* line 96, ../../Aplicando Sass/scss/_estructura.scss */
+#articulos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 104, ../../Aplicando Sass/scss/_estructura.scss */
+#articulos article {
+  padding: 30px;
+  height: auto;
+}
+
+/* line 109, ../../Aplicando Sass/scss/_estructura.scss */
+form {
+  margin: 20px;
+}
+
+/* line 112, ../../Aplicando Sass/scss/_estructura.scss */
+legend {
+  padding: 10px;
+}
+
+/* line 115, ../../Aplicando Sass/scss/_estructura.scss */
+form label {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

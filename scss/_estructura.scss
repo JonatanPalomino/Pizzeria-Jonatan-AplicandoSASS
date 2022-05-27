@@ -1,0 +1,117 @@
+#contenedor {
+    display: grid;
+    grid-template-areas: 
+        "Encabezado"
+        "Navegacion"
+        "Principal"
+        "Pie"
+    ;
+    background-color: rgba(70, 3, 3, 0.555);
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto minmax(200px, auto) 65px;
+}
+
+header {
+    grid-area: Encabezado;
+}
+
+nav {
+    grid-area: Navegacion;
+}
+
+main {
+    grid-area: Principal;
+}
+
+footer {
+    grid-area: Pie;
+}
+
+
+
+#encabezado {
+    display: flex;
+    background-image: url(http://assets.stickpng.com/images/580b57fcd9996e24bc43c1e1.png);
+    background-size: contain;
+}
+
+#encabezado {
+    img {
+    margin: 15px;
+}
+}
+
+
+
+#navegacion {
+    ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+}
+#navegacion {
+    ul {
+        li {
+    flex-grow: 1;
+}
+    }
+}
+
+
+
+
+
+
+.galeriaImagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.galeriaImagenes {
+    img {
+    padding: 20px;
+    height: auto;
+    width: 100%;
+}
+}
+
+
+#piePagina {
+    display: flex;
+    margin: 8px;
+}
+#piePagina {ul {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+}
+}
+
+
+#articulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+}
+#articulos {
+    article {
+    padding: 30px;
+    height: auto;
+}
+}
+form {
+    margin: 20px;
+}
+legend {
+    padding: 10px;
+}
+form label {
+    padding: 20px;
+}
